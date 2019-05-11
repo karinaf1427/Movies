@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content%}
+<h1>Películas</h1>
+<table call="'table table-stripped">
+    {% for movie in movies %}
+    <tr>
+        <td>{{movie.name}}</td>
+        <td>{{movie.get_ranking_display}}</td>
+    </tr>
+    {% endfor %}
+    <table>
+    {% endblock %}
